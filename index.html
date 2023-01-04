@@ -2,25 +2,25 @@
 <html class="noJS light-theme" lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Dashboard - Lorem ipsum</title>
 
     <script>
-        const hasJS = function() {
+        const hasJS = (function () {
             const htmlTag = document.getElementsByTagName('html')[0];
             const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
             htmlTag.className = htmlClass;
-        }();
+        })();
     </script>
 </head>
+
 <body>
     <!-- START : content -->
     <div id="content">
-
         <!-- START : sidebar -->
         <aside class="sidebar">
             <div class="sidebar__inner">
@@ -28,18 +28,54 @@
 
                 <nav class="sidebar__nav">
                     <ul>
-                        <li><a class="active" href="#"><ion-icon name="albums-outline"></ion-icon> Home</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Profile</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Messages</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> History</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Tasks</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Communities</a></li>
+                        <li>
+                            <a class="active" href="#">
+                                <ion-icon name="home-outline"></ion-icon> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="albums-outline"></ion-icon> Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="mail-outline"></ion-icon> Messages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="list-outline"></ion-icon> History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="checkmark-done-outline"></ion-icon> Tasks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="people-outline"></ion-icon> Communities
+                            </a>
+                        </li>
                     </ul>
 
                     <ul>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Settings</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Support</a></li>
-                        <li><a href="#"><ion-icon name="albums-outline"></ion-icon> Privacy</a></li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="settings-outline"></ion-icon> Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="help-circle-outline"></ion-icon> Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="key-outline"></ion-icon> Privacy
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -48,23 +84,34 @@
 
         <!-- START : core -->
         <main class="main">
-
             <header class="header">
-                <section class="header__top">
-                    <div class="header__search">
-                        <input type="text" id="search" name="search">
-                    </div>
-                    
-                    <div class="header__????">
-                        <p>Morgan Oakley</p>
-                    </div>
-                </section>
+                <form class="header__search">
+                    <button type="submit">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                    <label for="search">Search</label>
+                    <input type="text" id="search" name="search" placeholder="Search..." />
+                </form>
+
+                <div class="header__quicky">
+                    <a href="#" class="header__quicky__notifs">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </a>
+                    <figure class="header__quicky__avatar">
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
+                    </figure>
+                    <p class="header__quick__name">Morgan Oakley</p>
+                </div>
 
                 <div class="header__welcome">
                     <figure class="header__welcome__avatar">
-                        <img src="" alt="">
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
                     </figure>
-                    <p>Hi there, <span>Morgan Oakley (@morgan)</span></p>
+                    <p>
+                        Hi there, <br><span>Morgan Oakley (<a href="#">@morgan</a>)</span>
+                    </p>
                 </div>
 
                 <menu class="header__menu">
@@ -75,121 +122,153 @@
             </header>
 
             <section class="core">
-
-
                 <section class="panels">
-                <!--<h2 class="panels__title">Your Projects</h2>-->
+                    <!--<h2 class="panels__title">Your Projects</h2>-->
 
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
+
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
+
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
+
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
+
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
+
                     <div class="panel">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur aperiam eos sed, debitis vel atque veniam itaque!</p>
-    
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
+                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
+                            vel atque veniam itaque!
+                        </p>
+
                         <menu class="panel__action">
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                         </menu>
                     </div>
-    
                 </section>
 
                 <section class="widgets">
                     <h2>Announcements</h2>
 
                     <div class="widget">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quos non delectus nostrum earum, eum accusantium similique dolores sapiente autem corporis, architecto minima mollitia est voluptates! Ea amet illo assumenda.</p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                            quos non delectus nostrum earum, eum accusantium similique dolores
+                            sapiente autem corporis, architecto minima mollitia est voluptates!
+                            Ea amet illo assumenda.
+                        </p>
                     </div>
 
                     <h2>Trending</h2>
                     <div class="widget">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis in laboriosam libero, vel maiores doloremque facere doloribus quisquam ex repellendus itaque fugit sed harum animi veritatis temporibus unde atque.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                            perspiciatis in laboriosam libero, vel maiores doloremque facere
+                            doloribus quisquam ex repellendus itaque fugit sed harum animi
+                            veritatis temporibus unde atque.
+                        </p>
                     </div>
                 </section>
-
             </section>
-           
-
         </main>
         <!-- END : core -->
-
-
-       
-
     </div>
     <!-- END : content -->
 
     <!-- START : footer -->
     <footer>
-        <p>Copyright 2023 - <a href="http://www.dhh.me">dhh.me</a> / <a href="https://github.com/dhadjhenni">Github</a></p>
+        <p>
+            Copyright 2023 -
+            <a href="http://www.dhh.me">dhh.me</a> /
+            <a href="https://github.com/dhadjhenni">Github</a>
+        </p>
     </footer>
     <!-- END : footer -->
 
     <!-- START : scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>    
-        
-    </script>
 </body>
+
 </html>
