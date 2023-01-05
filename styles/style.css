@@ -443,10 +443,16 @@ body {
 .header__menu {
     list-style-type: none;
     display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .header__menu li {
     padding: 0 40px 0 0;
+}
+
+.header__menu li:last-child {
+    padding: 0;
 }
 
 .header__menu li a {
@@ -457,6 +463,7 @@ body {
     font-size: 1.6rem;
     padding: 10px 20px;
     border-radius: 4px;
+    display: block;
 }
 
 .header__menu li a:hover {
@@ -483,6 +490,10 @@ body {
     width: 100%;
 }
 
+.header__welcome p {
+    padding: 6px 0 0 0;
+}
+
 .header__welcome span {
     font-size: 2.2rem;
 }
@@ -493,11 +504,24 @@ body {
 
 .header__quicky {
     font-size: 1.4rem;
-    display: flex;
+}
+
+.header__quicky ul {
+    text-align: right;
+}
+
+.header__quicky ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 20px;
 }
 
 .header__quicky__notifs {
     font-size: 3rem;
+    color: #333;
+    top: 3px;
+    position: relative;
+    display: block;
 }
 
 .header__quicky__notifs:hover {
@@ -505,8 +529,10 @@ body {
 }
 
 .header__quicky__avatar {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    top: -2px;
+    position: relative;
 }
 
 .header__quicky__avatar img {
