@@ -78,6 +78,37 @@
                         </li>
                     </ul>
                 </nav>
+
+                <section class="stats">
+                    <div class="stats__item">
+                        <label for="file">Project v2.45</label>
+                        <progress id="file" max="100" value="40"> 40% </progress>
+                        <span>40%</span>
+                    </div>
+
+                    <div class="stats__item">
+                        <label for="file">Project v3.4</label>
+                        <progress id="file" max="100" value="80"> 80% </progress>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="stats__item">
+                        <label for="file">Data Storage</label>
+                        <progress id="file" max="100" value="25"> 25% </progress>
+                        <span>25 / 100 To</span>
+                    </div>
+
+                    <div class="stats__item">
+                        <label for="file">App Version</label>
+                        <select>
+                            <option value="Latest">Latest</option>
+                            <option value="20H2">20H2</option>
+                            <option value="18H1">18H1</option>
+                        </select>
+                    </div>
+                </section>
+
+                <button class="sign-out"><ion-icon name="log-out-outline"></ion-icon> Sign Out</button>
             </div>
         </aside>
         <!-- END : sidebar -->
@@ -86,7 +117,6 @@
         <main class="main">
             <header class="header">
                 <form class="header__search">
-
                     <label for="search">//// Search</label>
                     <button type="submit">
                         <ion-icon name="search-outline"></ion-icon>
@@ -107,6 +137,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="#" class="header__quicky__notifs">
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
                             <figure class="header__quicky__avatar">
                                 <img
                                     src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
@@ -114,7 +149,9 @@
                             <p class="header__quicky__name">[ Morgan Oakley ]</p>
                         </li>
                     </ul>
+                    <span class="data">Connected from Paris, France / IP : 54.85.12.863</span>
                 </div>
+
 
                 <div class="header__welcome">
                     <figure class="header__welcome__avatar">
@@ -149,13 +186,14 @@
                         </p>
 
                         <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
+                            <li><button><ion-icon name="open-outline"></ion-icon> Open</button></li>
+                            <li><button><ion-icon name="expand-outline"></ion-icon> Expand</button></li>
+                            <li><button><ion-icon name="open-outline"></ion-icon> Hide</button></li>
+                            <li><button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button></li>
                         </menu>
                     </div>
 
-                    <div class="panel">
+                    <div class="panel highlight">
                         <span class="panel__label">Category</span>
                         <h3 class="panel__title">Super Cool Projects</h3>
                         <p>
@@ -169,6 +207,7 @@
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
                             <li><button>Lorem</button></li>
+                            <li><button><ion-icon name="open-outline"></ion-icon> Unpin</button></li>
                         </menu>
                     </div>
 
@@ -242,25 +281,73 @@
                 </section>
 
                 <section class="widgets">
-                    <h2>//// Announcements</h2>
-
+                    <h2>Announcements</h2>
                     <div class="widget">
+                        <p class="date">22.08.22</p>
+                        <h3 class="widget__title">Lorem !</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-                            quos non delectus nostrum earum, eum accusantium similique dolores
-                            sapiente autem corporis, architecto minima mollitia est voluptates!
-                            Ea amet illo assumenda.
+                            — Lorem ipsum, dolor sit amet consectetur adipisng elit. Maiores
+                            quos non delectus nostrum earum.<br>
+                            <a href="#">→ Learn more</a>
                         </p>
                     </div>
 
-                    <h2>//// Trending</h2>
+                    <h2>Trending</h2>
                     <div class="widget">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                            perspiciatis in laboriosam libero, vel maiores doloremque facere
-                            doloribus quisquam ex repellendus itaque fugit sed harum animi
-                            veritatis temporibus unde atque.
-                        </p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="trending-up-outline"></ion-icon>
+                                    We're in the endgame now...
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#">→ See more</a>
+                    </div>
+
+                    <h2>//// Communities</h2>
+                    <div class="widget">
+                        <ul class="communities">
+                            <li>
+                                <a href="#">
+                                    <span class="date">22.12</span>
+                                    <span class="topic">— Topic</span>
+                                    <p class="title">How about this new idea ?</p>
+                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="date">22.12</span>
+                                    <span class="topic">— Topic</span>
+                                    <p class="title">How about this new idea ?</p>
+                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="date">22.12</span>
+                                    <span class="topic">— Topic</span>
+                                    <p class="title">How about this new idea ?</p>
+                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="date">22.12</span>
+                                    <span class="topic">— Topic</span>
+                                    <p class="title">How about this new idea ?</p>
+                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="go">→ Full board </a>
                     </div>
                 </section>
             </section>
