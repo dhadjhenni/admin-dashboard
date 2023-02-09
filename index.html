@@ -1,374 +1,383 @@
 <!DOCTYPE html>
 <html class="noJS light-theme" lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+        <title>Dashboard - Lorem ipsum</title>
 
-    <title>Dashboard - Lorem ipsum</title>
+        <script>
+            const hasJS = (function () {
+                const htmlTag = document.getElementsByTagName('html')[0];
+                const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
+                htmlTag.className = htmlClass;
+            })();
+        </script>
+    </head>
 
-    <script>
-        const hasJS = (function () {
-            const htmlTag = document.getElementsByTagName('html')[0];
-            const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
-            htmlTag.className = htmlClass;
-        })();
-    </script>
-</head>
+    <body>
+        <!-- START : content -->
+        <div id="content">
+            <!-- START : sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar__inner">
+                    <h1><a href="#">Dashboard</a></h1>
 
-<body>
-    <!-- START : content -->
-    <div id="content">
-        <!-- START : sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar__inner">
-                <h1><a href="#">Dashboard</a></h1>
-
-                <nav class="sidebar__nav">
-                    <ul>
-                        <li>
-                            <a class="active" href="#">
-                                <ion-icon name="home-outline"></ion-icon> Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="albums-outline"></ion-icon> Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="mail-outline"></ion-icon> Messages
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="list-outline"></ion-icon> History
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="checkmark-done-outline"></ion-icon> Tasks
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="people-outline"></ion-icon> Communities
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="settings-outline"></ion-icon> Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="help-circle-outline"></ion-icon> Support
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <ion-icon name="key-outline"></ion-icon> Privacy
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <section class="stats">
-                    <div class="stats__item">
-                        <label for="file">Project v2.45</label>
-                        <progress id="file" max="100" value="40"> 40% </progress>
-                        <span>40%</span>
-                    </div>
-
-                    <div class="stats__item">
-                        <label for="file">Project v3.4</label>
-                        <progress id="file" max="100" value="80"> 80% </progress>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="stats__item">
-                        <label for="file">Data Storage</label>
-                        <progress id="file" max="100" value="25"> 25% </progress>
-                        <span>25 / 100 To</span>
-                    </div>
-
-                    <div class="stats__item">
-                        <label for="file">App Version</label>
-                        <select>
-                            <option value="Latest">Latest</option>
-                            <option value="20H2">20H2</option>
-                            <option value="18H1">18H1</option>
-                        </select>
-                    </div>
-                </section>
-
-                <button class="sign-out"><ion-icon name="log-out-outline"></ion-icon> Sign Out</button>
-            </div>
-        </aside>
-        <!-- END : sidebar -->
-
-        <!-- START : core -->
-        <main class="main">
-            <header class="header">
-                <form class="header__search">
-                    <label for="search">//// Search</label>
-                    <button type="submit">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                    <input type="text" id="search" name="search" placeholder="Search..." />
-                </form>
-
-                <div class="header__quicky">
-                    <ul>
-                        <li>
-                            <a href="#" class="header__quicky__notifs">
-                                <ion-icon name="home-outline"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="header__quicky__notifs">
-                                <ion-icon name="notifications-outline"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="header__quicky__notifs">
-                                <ion-icon name="mail-unread-outline"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <figure class="header__quicky__avatar">
-                                <img
-                                    src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
-                            </figure>
-                            <p class="header__quicky__name">[ Morgan Oakley ]</p>
-                        </li>
-                    </ul>
-                    <span class="data">Connected from Paris, France / IP : 54.85.12.863</span>
-                </div>
-
-
-                <div class="header__welcome">
-                    <figure class="header__welcome__avatar">
-                        <img
-                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
-                    </figure>
-                    <p>
-                        Hi there, <br><span>Morgan Oakley (<a href="#">@morgan</a>)</span>
-                    </p>
-                </div>
-
-                <menu class="header__menu">
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Upload</a></li>
-                    <li><a href="#">Filter</a></li>
-                    <li><a href="#">Share</a></li>
-                </menu>
-            </header>
-
-            <section class="core">
-                <section class="panels">
-                    <!--<h2 class="panels__title">Your Projects</h2>-->
-
-                    <div class="panel">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button><ion-icon name="open-outline"></ion-icon> Open</button></li>
-                            <li><button><ion-icon name="expand-outline"></ion-icon> Expand</button></li>
-                            <li><button><ion-icon name="open-outline"></ion-icon> Hide</button></li>
-                            <li><button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button></li>
-                        </menu>
-                    </div>
-
-                    <div class="panel highlight">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button><ion-icon name="open-outline"></ion-icon> Unpin</button></li>
-                        </menu>
-                    </div>
-
-                    <div class="panel">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                        </menu>
-                    </div>
-
-                    <div class="panel">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                        </menu>
-                    </div>
-
-                    <div class="panel">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                        </menu>
-                    </div>
-
-                    <div class="panel">
-                        <span class="panel__label">Category</span>
-                        <h3 class="panel__title">Super Cool Projects</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                            soluta. Culpa labore assumenda at cumque, quaerat consectetur
-                            perferendis hic accusamus eius, pariatur aperiam eos sed, debitis
-                            vel atque veniam itaque!
-                        </p>
-
-                        <menu class="panel__action">
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                            <li><button>Lorem</button></li>
-                        </menu>
-                    </div>
-                </section>
-
-                <section class="widgets">
-                    <h2>Announcements</h2>
-                    <div class="widget">
-                        <p class="date">22.08.22</p>
-                        <h3 class="widget__title">Lorem !</h3>
-                        <p>
-                            — Lorem ipsum, dolor sit amet consectetur adipisng elit. Maiores
-                            quos non delectus nostrum earum.<br>
-                            <a href="#">→ Learn more</a>
-                        </p>
-                    </div>
-
-                    <h2>Trending</h2>
-                    <div class="widget">
+                    <nav class="sidebar__nav">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <ion-icon name="trending-up-outline"></ion-icon>
-                                    We're in the endgame now...
-                                </a>
+                                <a class="active" href="#"> <ion-icon name="home-outline"></ion-icon> Home </a>
+                            </li>
+                            <li>
+                                <a href="#"> <ion-icon name="albums-outline"></ion-icon> Profile </a>
+                            </li>
+                            <li>
+                                <a href="#"> <ion-icon name="mail-outline"></ion-icon> Messages </a>
+                            </li>
+                            <li>
+                                <a href="#"> <ion-icon name="list-outline"></ion-icon> History </a>
+                            </li>
+                            <li>
+                                <a href="#"> <ion-icon name="checkmark-done-outline"></ion-icon> Tasks </a>
+                            </li>
+                            <li>
+                                <a href="#"> <ion-icon name="people-outline"></ion-icon> Communities </a>
                             </li>
                         </ul>
-                        <a href="#">→ See more</a>
-                    </div>
 
-                    <h2>//// Communities</h2>
-                    <div class="widget">
-                        <ul class="communities">
+                        <ul>
                             <li>
-                                <a href="#">
-                                    <span class="date">22.12</span>
-                                    <span class="topic">— Topic</span>
-                                    <p class="title">How about this new idea ?</p>
-                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
-                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
-                                </a>
+                                <a href="#"> <ion-icon name="settings-outline"></ion-icon> Settings </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="date">22.12</span>
-                                    <span class="topic">— Topic</span>
-                                    <p class="title">How about this new idea ?</p>
-                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
-                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
-                                </a>
+                                <a href="#"> <ion-icon name="help-circle-outline"></ion-icon> Support </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="date">22.12</span>
-                                    <span class="topic">— Topic</span>
-                                    <p class="title">How about this new idea ?</p>
-                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
-                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
-                                </a>
+                                <a href="#"> <ion-icon name="key-outline"></ion-icon> Privacy </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="date">22.12</span>
-                                    <span class="topic">— Topic</span>
-                                    <p class="title">How about this new idea ?</p>
-                                    <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
-                                    <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
-                                </a>
-                            </li>
-
                         </ul>
+                    </nav>
 
-                        <a href="#" class="go">→ Full board </a>
+                    <section class="stats">
+                        <div class="stats__item">
+                            <label for="file">Project v2.45</label>
+                            <progress id="file" max="100" value="40">40%</progress>
+                            <span>40%</span>
+                        </div>
+
+                        <div class="stats__item">
+                            <label for="file">Project v3.4</label>
+                            <progress id="file" max="100" value="80">80%</progress>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="stats__item">
+                            <label for="file">Data Storage</label>
+                            <progress id="file" max="100" value="25">25%</progress>
+                            <span>25 / 100 To</span>
+                        </div>
+
+                        <div class="stats__item">
+                            <label for="file">App Version</label>
+                            <select>
+                                <option value="Latest">Latest</option>
+                                <option value="20H2">20H2</option>
+                                <option value="18H1">18H1</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <button class="sign-out"><ion-icon name="log-out-outline"></ion-icon> Sign Out</button>
+                </div>
+            </aside>
+            <!-- END : sidebar -->
+
+            <!-- START : core -->
+            <main class="main">
+                <header class="header">
+                    <form class="header__search">
+                        <label for="search">//// Search</label>
+
+                        <input type="text" id="search" name="search" placeholder="Search..." />
+                        <button type="submit" value="Search">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <div class="header__quicky">
+                        <ul>
+                            <li>
+                                <a href="#" class="header__quicky__notifs">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__quicky__notifs">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__quicky__notifs">
+                                    <ion-icon name="mail-unread-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <figure class="header__quicky__avatar">
+                                    <img
+                                        src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" />
+                                </figure>
+                                <p class="header__quicky__name">[ Morgan Oakley ]</p>
+                            </li>
+                        </ul>
+                        <span class="data">Connected from Paris, France / IP : 54.85.12.863</span>
                     </div>
+
+                    <div class="header__welcome">
+                        <figure class="header__welcome__avatar">
+                            <img
+                                src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" />
+                        </figure>
+                        <p>
+                            Hi there, <br /><span>Morgan Oakley (<a href="#">@morgan</a>)</span>
+                        </p>
+                    </div>
+
+                    <menu class="header__menu">
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Upload</a></li>
+                        <li><a href="#">Filter</a></li>
+                        <li><a href="#">Share</a></li>
+                    </menu>
+                </header>
+
+                <section class="core">
+                    <section class="panels">
+                        <!--<h2 class="panels__title">Your Projects</h2>-->
+
+                        <div class="panel">
+                            <span class="panel__label">Category</span>
+                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
+                                assumenda at cumque, quaerat consectetur perferendis!
+                            </p>
+
+                            <menu class="panel__action">
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Open</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="expand-outline"></ion-icon> Expand</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Hide</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button>
+                                </li>
+                            </menu>
+                        </div>
+
+                        <div class="panel highlight">
+                            <span class="panel__label">Category</span>
+                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
+                                <a href="#">assumenda at cumque</a>, quaerat consectetur perferendis hic accusamus eius,
+                                pariatur aperiam eos sed, debitis vel atque veniam itaque!
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Atque
+                                    temporibus quaerat corrupti, nam doloremque autem?
+                                </li>
+                                <li>
+                                    Numquam, itaque. Illo, in saepe iure autem, doloremque alias, vitae obcaecati
+                                    repellat iste cumque hic?
+                                </li>
+                            </ul>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
+                                assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur
+                                aperiam eos sed, debitis vel atque veniam itaque!
+                            </p>
+
+                            <menu class="panel__action">
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Open</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="expand-outline"></ion-icon> Expand</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Hide</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Unpin</button>
+                                </li>
+                            </menu>
+                        </div>
+
+                        <div class="panel">
+                            <span class="panel__label">Category</span>
+                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
+                                assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur
+                                aperiam eos sed, debitis vel atque veniam itaque!
+                            </p>
+
+                            <menu class="panel__action">
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Open</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="expand-outline"></ion-icon> Expand</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Hide</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button>
+                                </li>
+                            </menu>
+                        </div>
+
+                        <div class="panel">
+                            <span class="panel__label">Category</span>
+                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
+                                assumenda at cumque, quaerat consectetur perferendis.
+                            </p>
+
+                            <menu class="panel__action">
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Open</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="expand-outline"></ion-icon> Expand</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Hide</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button>
+                                </li>
+                            </menu>
+                        </div>
+
+                        <div class="panel">
+                            <span class="panel__label">Category</span>
+                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta.</p>
+
+                            <menu class="panel__action">
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Open</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="expand-outline"></ion-icon> Expand</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="open-outline"></ion-icon> Hide</button>
+                                </li>
+                                <li>
+                                    <button><ion-icon name="eyedrop-outline"></ion-icon> Pin</button>
+                                </li>
+                            </menu>
+                        </div>
+                    </section>
+
+                    <section class="widgets">
+                        <h2>Announcements</h2>
+
+                        <div class="widget widget--post">
+                            <p class="date">22.08.22 // Product Update</p>
+                            <h3 class="widget__title">Big news guys, we're out !</h3>
+                            <p>
+                                — Lorem ipsum, dolor sit amet consectetur adipisng elit. Maiores quos non delectus
+                                nostrum earum...<br />
+                                <a class="go" href="#">Learn more</a>
+                            </p>
+                        </div>
+
+                        <h2>Trending</h2>
+                        <div class="widget widget--trending">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="trending-up-outline"></ion-icon>
+                                        <span> We're in the endgame now... </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="trending-up-outline"></ion-icon>
+                                        <span> We're in the endgame now... </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="go" href="#">See more</a>
+                        </div>
+
+                        <h2>Communities</h2>
+                        <div class="widget">
+                            <ul class="communities">
+                                <li>
+                                    <a href="#">
+                                        <span class="date">22.12</span>
+                                        <span class="topic">— Topic</span>
+                                        <p class="title">How about this new idea ?</p>
+                                        <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                        <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="date">22.12</span>
+                                        <span class="topic">— Topic</span>
+                                        <p class="title">How about this new idea ?</p>
+                                        <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                        <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="date">22.12</span>
+                                        <span class="topic">— Topic</span>
+                                        <p class="title">How about this new idea ?</p>
+                                        <span class="likes"><ion-icon name="thumbs-up-outline"></ion-icon> 34</span>
+                                        <span class="replies"><ion-icon name="chatbubbles-outline"></ion-icon> 23</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="go">Full board </a>
+                        </div>
+                    </section>
                 </section>
-            </section>
-        </main>
-        <!-- END : core -->
-    </div>
-    <!-- END : content -->
+            </main>
+            <!-- END : core -->
+        </div>
+        <!-- END : content -->
 
-    <!-- START : footer -->
-    <footer>
-        <p>
-            Copyright 2023 -
-            <a href="http://www.dhh.me">dhh.me</a> /
-            <a href="https://github.com/dhadjhenni">Github</a>
-        </p>
-    </footer>
-    <!-- END : footer -->
+        <!-- START : footer -->
+        <footer>
+            <p>
+                Copyright 2023 -
+                <a href="http://www.dhh.me">dhh.me</a> /
+                <a href="https://github.com/dhadjhenni">Github</a>
+            </p>
+        </footer>
+        <!-- END : footer -->
 
-    <!-- START : scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+        <!-- START : scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
