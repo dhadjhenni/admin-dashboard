@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="noJS light-theme" lang="fr">
+<html class="noJS" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,6 +22,7 @@
         <div id="content">
             <!-- START : sidebar -->
             <aside class="sidebar">
+                <button class="close-nav">&#10539;</button>
                 <div class="sidebar__inner">
                     <h1><a href="#">Dashboard</a></h1>
 
@@ -62,26 +63,26 @@
 
                     <section class="stats">
                         <div class="stats__item">
-                            <label for="file">Project v2.45</label>
-                            <progress id="file" max="100" value="40">40%</progress>
+                            <p class="label">Project v2.45</p>
+                            <progress max="100" value="40">40%</progress>
                             <span>40%</span>
                         </div>
 
                         <div class="stats__item">
-                            <label for="file">Project v3.4</label>
-                            <progress id="file" max="100" value="80">80%</progress>
+                            <p class="label">Project v3.4</p>
+                            <progress max="100" value="80">80%</progress>
                             <span>80%</span>
                         </div>
 
                         <div class="stats__item">
-                            <label for="file">Data Storage</label>
-                            <progress id="file" max="100" value="25">25%</progress>
+                            <p class="label">Data Storage</p>
+                            <progress max="100" value="25">25%</progress>
                             <span>25 / 100 To</span>
                         </div>
 
                         <div class="stats__item">
-                            <label for="file">App Version</label>
-                            <select>
+                            <label for="item4">App Version</label>
+                            <select id="item4" name="item4 ">
                                 <option value="Latest">Latest</option>
                                 <option value="20H2">20H2</option>
                                 <option value="18H1">18H1</option>
@@ -99,7 +100,10 @@
                 <header class="header">
                     <form class="header__search">
                         <label for="search">//// Search</label>
-
+                        <button class="toggle-nav">
+                            <span></span>
+                            <em>Show/Hide Navigation</em>
+                        </button>
                         <input type="text" id="search" name="search" placeholder="Search..." />
                         <button type="submit" value="Search">
                             <ion-icon name="search-outline"></ion-icon>
@@ -126,7 +130,8 @@
                             <li>
                                 <figure class="header__quicky__avatar">
                                     <img
-                                        src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" />
+                                        src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+                                        alt="Avatar" />
                                 </figure>
                                 <p class="header__quicky__name">[ Morgan Oakley ]</p>
                             </li>
@@ -137,7 +142,8 @@
                     <div class="header__welcome">
                         <figure class="header__welcome__avatar">
                             <img
-                                src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" />
+                                src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+                                alt="Avatar" />
                         </figure>
                         <p>
                             Hi there, <br /><span>Morgan Oakley (<a href="#">@morgan</a>)</span>
@@ -158,7 +164,7 @@
 
                         <div class="panel">
                             <span class="panel__label">Category</span>
-                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <h2 class="panel__title">Super Cool Projects</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
                                 assumenda at cumque, quaerat consectetur perferendis!
@@ -182,7 +188,7 @@
 
                         <div class="panel highlight">
                             <span class="panel__label">Category</span>
-                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <h2 class="panel__title">Super Cool Projects</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
                                 <a href="#">assumenda at cumque</a>, quaerat consectetur perferendis hic accusamus eius,
@@ -224,7 +230,7 @@
 
                         <div class="panel">
                             <span class="panel__label">Category</span>
-                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <h2 class="panel__title">Super Cool Projects</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
                                 assumenda at cumque, quaerat consectetur perferendis hic accusamus eius, pariatur
@@ -249,7 +255,7 @@
 
                         <div class="panel">
                             <span class="panel__label">Category</span>
-                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <h2 class="panel__title">Super Cool Projects</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta. Culpa labore
                                 assumenda at cumque, quaerat consectetur perferendis.
@@ -273,7 +279,7 @@
 
                         <div class="panel">
                             <span class="panel__label">Category</span>
-                            <h3 class="panel__title">Super Cool Projects</h3>
+                            <h2 class="panel__title">Super Cool Projects</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta.</p>
 
                             <menu class="panel__action">
@@ -379,5 +385,19 @@
         <!-- START : scripts -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            const closeButton = document.querySelector('.close-nav');
+            const openButton = document.querySelector('.toggle-nav');
+
+            openButton.addEventListener('click', function (e) {
+                document.body.classList = 'nav-open';
+                e.preventDefault();
+            });
+
+            closeButton.addEventListener('click', function () {
+                document.body.classList = '';
+                e.preventDefault();
+            });
+        </script>
     </body>
 </html>
